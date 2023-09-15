@@ -1,0 +1,95 @@
+/*? global clearing */
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Google fonts */
+
+body {
+  background: #eaeaea;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 23.4375rem;
+  margin-top: 2rem;
+  height: 41.6875rem;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.info {
+  width: 20.75rem;
+  height: 5.625rem;
+  margin: 4rem auto;
+  padding: 0.9rem;
+  text-align: end;
+  border-radius: 1.25rem;
+  background: #f1f1f1;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info .eksekusi {
+  font-size: 1.2rem;
+  line-height: normal;
+  opacity: 0.8;
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-family: 'Inter', sans-serif;
+  transition: 0.5s ease-in-out;
+}
+.info .result {
+  font-size: 2.1rem;
+  line-height: normal;
+  opacity: 0.8;
+  font-family: 'Inter', sans-serif;
+}
+
+.content table {
+  margin: auto;
+}
+.content table tr button {
+  width: 4.0625rem;
+  height: 4.0625rem;
+  font-size: 1.5625rem;
+  background: #585858;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-right: 0.8rem;
+  margin-top: 0.7rem;
+  transition: 0.4s linear;
+  transform: scale(1);
+}
+
+.content table tr button:hover {
+  transform: scale(1.05);
+}
+
+.content table tr .symbol {
+  border-radius: 3.125rem;
+  font-size: 1.875rem;
+  background: #ffc700;
+  box-shadow: 30px 30px 80px 0px rgba(55, 84, 170, 0.1) inset;
+}
+
+.content table .zero {
+  background: #585858;
+  border-radius: 3.125rem;
+  width: 9.625rem;
+  text-align: start;
+  padding-left: 1.6rem;
+  height: 3.875rem;
+  font-size: 1.9rem;
+}

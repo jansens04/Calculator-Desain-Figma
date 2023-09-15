@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Make Calculator Simple ✨</title>
+    <!-- 👇 css code file 👇 -->
+    <link rel="stylesheet" href="./src/style/global.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <div class="info">
+                <span class="eksekusi"> </span>
+                <h3 class="result"></h3>
+            </div>
+
+            <table>
+                <tr>
+                    <td><button onclick="clearText()">AC</button></td>
+                    <td><button>+/-</button></td>
+                    <td><button onclick="calculate('%')">%</button></td>
+                    <td><button class="symbol"><img src="src/img/bagi.png" alt=""></button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="calculate(7)">7</button></td>
+                    <td><button class="number" onclick="calculate(8)">8</button></td>
+                    <td><button class="number" onclick="calculate(9)">9</button></td>
+                    <td><button class="symbol" onclick="calculate('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="calculate(4)">4</button></td>
+                    <td><button class="number" onclick="calculate(5)">5</button></td>
+                    <td><button class="number" onclick="calculate(6)">6</button></td>
+                    <td><button class="symbol kurang" onclick="calculate('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="calculate(1)">1</button></td>
+                    <td><button class="number" onclick="calculate(2)">2</button></td>
+                    <td><button class="number" onclick="calculate(3)">3</button></td>
+                    <td><button class="symbol tambah" onclick="calculate('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="zero" onclick="calculate(0)">0</button></td>
+                    <td><button onclick="calculate(',')">,</button></td>
+                    <td><button class="symbol equal" onclick="result()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 👇 javascript code file 👇 -->
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
